@@ -1,0 +1,28 @@
+-> pip freeze > requirements.txt
+
+-> First create docker file.
+-> build the docker image by this command
+	-- docker build -t onkarshinde77/project_name .
+-> Login to docker hub
+-> push the image to the docker hub
+-> pull the docker image
+-> run the docker image locally
+	-- docker run -d -p port:port onkarshinde/project_name
+
+-------------------------------------------------------------------------
+## Some imp commands
+-> build docker image : docker build -t repo-name .
+-> check docker image : docker image
+-> delete docker image : docker rmi repo-name
+-> remove partially created docker image : docker system prune -f
+-> if you want to delete all dependency then run this commands
+	- pip freeze > uninstall.txt
+	- pip uninstall -y -r uninstall.txt
+	- del uninstall.txt
+-> to check all list of dependency : pip list
+-> list of all current running container : docker ps
+-> to stop running port of docker : docker stop id
+
+
+
+
